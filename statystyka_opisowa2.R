@@ -15,3 +15,7 @@ install_github('karabanb/BKmisc')
 library(BKmisc)
 
 BKmisc::start_proj()
+
+# sd 
+
+# variance
