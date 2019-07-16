@@ -16,6 +16,13 @@ library(BKmisc)
 
 BKmisc::start_proj()
 
-# sd 
+# unikamy pokrywania się nazw funkcji! Range to funkcja bazowa! 
+# jezeli nazwy funkcji sie pokrywaja, mozna to obejsc wskazujac z ktorego pakietu ma brac funkcje
+# poprzez 'nazwa_pakietu::funkcja'
 
-# variance
+range <- function(x){
+  max(x)-min(x)
+}
+
+range(1:4)
+range(zb1)
