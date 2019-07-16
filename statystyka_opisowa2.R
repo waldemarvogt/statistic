@@ -26,3 +26,12 @@ range <- function(x){
 
 range(1:4)
 range(zb1)
+
+# rozstep miedzykwartylowy
+
+quantile(zb1)
+quantile(zb1,type=6)
+IQR(zb1)
+IQR(zb2)
+
+
