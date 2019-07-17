@@ -51,4 +51,22 @@ sd(zb1)/mean(zb2)*100
 sd(zb2)/mean(zb2)*100
 
 
-#  
+#  Warianca, odchylenie standardowe - ZADANIE
+
+v1 <- c(4,5,5,5,6,6,6,6,7,7,8,8)
+
+var(v1)
+
+var_fun <- function(x){
+  sum((x-mean(x))^2)/(length(x)-1)
+}
+
+var_fun(v1)
+
+sd(v1)
+
+sd_fun <- function(x){
+  sqrt(sum((x-mean(x))^2)/(length(x)-1))
+}
+
+sd_fun(v1)
