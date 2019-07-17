@@ -14,7 +14,7 @@ library(devtools)
 install_github('karabanb/BKmisc')
 library(BKmisc)
 
-BKmisc::start_proj()
+
 
 # unikamy pokrywania się nazw funkcji! Range to funkcja bazowa! 
 # jezeli nazwy funkcji sie pokrywaja, mozna to obejsc wskazujac z ktorego pakietu ma brac funkcje
@@ -27,11 +27,28 @@ range <- function(x){
 range(1:4)
 range(zb1)
 
-# rozstep miedzykwartylowy
+# rozstep miedzykwartylowy - roznica pomiedzy wartoscia pierwszego i trzeciego kwartyla
 
 quantile(zb1)
 quantile(zb1,type=6)
 IQR(zb1)
 IQR(zb2)
 
+# variance - przecietne odchylenie wynikow obserwacji od ich sredniej
 
+var(zb1)
+
+# odchylenie standardowe (standard deviation) - jak szeroko wartości jakiejś wielkości są rozrzucone wokół jej średniej
+# Im mniejsza wartość odchylenia tym obserwacje są bardziej skupione wokół średniej.
+
+sd(zb1)
+
+
+# wspolczynnik zmiennosci
+
+sd(zb1)/mean(zb2)*100
+
+sd(zb2)/mean(zb2)*100
+
+
+#  
